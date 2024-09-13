@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-simulator',
@@ -13,7 +14,7 @@ export class SimulatorComponent implements OnInit {
 
       meses = [{"id": 0,"text": "3","value": "opción 1"},{"id": 1,"text": "6","value": "opción 2"},{"id": 2,"text": "9","value": "opción 3"},{"id": 3,"text": "12","value": "opción 4"},{"id": 4,"text": "Otro","value": "opción 5"}];
 
-  constructor() { }
+  constructor(private readonly router: Router) { }
 
   ngOnInit(): void {
   }
@@ -31,6 +32,10 @@ this.diasMeses= 'dias'
       // @ts-ignore
       this.opcion = this.meses;
     }
-   ;
+
+  }
+
+  continue(evento:any){
+    this.router.navigate(['summary'])
   }
 }

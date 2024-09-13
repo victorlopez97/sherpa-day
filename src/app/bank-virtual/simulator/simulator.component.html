@@ -8,5 +8,7 @@
         <p  *ngIf="mostrar" class="sp-text-label-2" style="color: var(--sp-color-foreground-secondary)">Selecciona los {{diasMeses}}</p>
         <sp-ml-chip-selector
                *ngIf="mostrar" [selectionValues]='opcion'></sp-ml-chip-selector>
+
+        <button (clickButton)= "continue($event)" class='sp-at-btn sp-at-btn--primary sp-at-btn--lg '  >Continuar</button>
     </div>
 </sp-tp-progress>
