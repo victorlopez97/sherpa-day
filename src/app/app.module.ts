@@ -4,20 +4,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BankVirtualModule} from "./bank-virtual/bank-virtual.module";
-import { DashboardComponent } from './dashboard/dashboard.component';
+import {DashboardComponent} from "./bank-virtual/dashboard/dashboard.component";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    DashboardComponent
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BankVirtualModule
+    HttpClientModule,
+    BankVirtualModule,
   ],
-  providers: [],
+  providers: [HttpClient],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
 export class AppModule { }
