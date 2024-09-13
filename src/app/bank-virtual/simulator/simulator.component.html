@@ -2,11 +2,11 @@
     <div class="blanco">
         <sp-ml-slider editable step=1 max=4200000 min=1500000 value=4200000 status="ENABLED" message="Mensaje de error"></sp-ml-slider>
 
-        <sp-ml-multi-selector (onCardChecked)="click($event)" label="Selecciona como quieres simular tu plazo"
+        <sp-ml-multi-selector (cardClicked)="click($event)" label="Selecciona como quieres simular tu plazo"
                                values-to-card='[{"desc": "Días","value": "0", "isChecked": "false" },{ "desc": "Meses","value": "1","isChecked": "false"}]'></sp-ml-multi-selector>
 
-        <p  *ngIf="mostrar" class="sp-text-label-2" style="color: var(--sp-color-foreground-secondary)">Selecciona los dias</p>
+        <p  *ngIf="mostrar" class="sp-text-label-2" style="color: var(--sp-color-foreground-secondary)">Selecciona los {{diasMeses}}</p>
         <sp-ml-chip-selector
-               *ngIf="mostrar" selection-values='[{"id": 0,"text": "30","value": "opción 1"},{"id": 1,"text": "60","value": "opción 2"},{"id": 2,"text": "90","value": "opción 3"},{"id": 3,"text": "120","value": "opción 4"},{"id": 4,"text": "Otro","value": "opción 5"}]'></sp-ml-chip-selector>
+               *ngIf="mostrar" [selectionValues]='opcion'></sp-ml-chip-selector>
     </div>
 </sp-tp-progress>
