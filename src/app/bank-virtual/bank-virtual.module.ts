@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { BankVirtualRoutingModule } from './bank-virtual-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { SimulatorComponent } from './simulator/simulator.component';
 
 
 @NgModule({
   declarations: [
-    DashboardComponent
+    DashboardComponent,
+    SimulatorComponent
   ],
   imports: [
     CommonModule,
