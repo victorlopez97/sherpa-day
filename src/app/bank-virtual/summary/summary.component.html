@@ -1,1 +1,19 @@
-<p>summary works!</p>
+<sp-tp-progress
+  title-label="Así queda la simulación de tu CDT"
+  step-label="Paso 1 de 6"
+  subtitle="Revisa y continua con la apertura de tu CDT o corrige según lo que necesitas."
+  progress-percentage="80"
+>
+  <div class="blanco">
+    <div>Tu simulacion</div>
+    <sp-ml-card-list
+      values-card-list='[{"title": "Tu CDT a 90 días","desc": "Tasa establecida según el monto y el plazo: 9.70% E.A","textButton":"Abrir CDT","typetag": "INFO", "tag": "Tu simulación","values": [{ "label": "Label 1","amount": "00,00","isAmount":"true"}]}]'
+    ></sp-ml-card-list>
+
+    <div>Sigue nuestras recomendaciones</div>
+    <sp-ml-card-list
+      hidden-arrow
+      values-card-list='[{"title": "Tu CDT a 120 días","avatar":{"text":"Miguel Rojas"},"desc": "Tasa establecida según el monto y el plazo: 9.70% E.A", "desc2": "Tu CDT vencerá el 20/11/2024","values": [{ "label": "Monto ingresado","amount": "$500.000"}, { "label": "Recibirás","amount": "$522.814"}]},{"title": "Title","avatar":{"text":"Miguel Rojas"},"desc": "Description 1", "desc2": "Description 2","values": [{ "label": "Label 1","amount": "00,00"}, { "label": "Label 2","amount": "00,00"}]}]'
+    ></sp-ml-card-list>
+  </div>
+</sp-tp-progress>
