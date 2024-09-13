@@ -4,7 +4,7 @@ import {DashboardComponent} from "./bank-virtual/dashboard/dashboard.component";
 
 const routes: Routes = [
   {
-    path: '', redirectTo: "test", pathMatch: 'full'
+    path: '', redirectTo: "dashboard", pathMatch: 'full'
   },
   {
     path: 'dashboard',
