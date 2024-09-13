@@ -34,12 +34,7 @@
               "src/assets",
               {
                 "glob": "**/*",
-                "input": "./node_modules/@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/collection/assets/",
-                "output": "./assets"
-              },
-              {
-                "glob": "**/*",
-                "input": "./node_modules/~@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection/assets/",
+                "input": "./node_modules/@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection/assets/",
                 "output": "./assets"
               }
             ],
@@ -115,8 +110,7 @@
             ],
             "styles": [
               "src/styles.scss",
-              "node_modules/@npm-bbta/bbog-dig-dt-webcomponents-lib/dist/bdb-webcomponents/bdb-webcomponents.css",
-              "node_modules/@npm-bbta/bbog-ate-disbursement-wc-lib-web-ui/dist/bbog-ate-disbursement-wc-lib-web-ui/bbog-ate-disbursement-wc-lib-web-ui.css"
+              "node_modules/@npm-bbta/bbog-dig-dt-sherpa-lib/dist/bbog-dig-dt-sherpa-lib/bbog-dig-dt-sherpa-lib.css"
             ],
             "scripts": []
           }
