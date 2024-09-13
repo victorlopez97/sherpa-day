@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "sherpa-day-prueba": {
+    "sherpa-day": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/sherpa-day-prueba",
+            "outputPath": "dist/sherpa-day",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sherpa-day-prueba:build:production"
+              "browserTarget": "sherpa-day:build:production"
             },
             "development": {
-              "browserTarget": "sherpa-day-prueba:build:development"
+              "browserTarget": "sherpa-day:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "sherpa-day-prueba:build"
+            "browserTarget": "sherpa-day:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "sherpa-day-prueba"
+  "defaultProject": "sherpa-day"
 }
