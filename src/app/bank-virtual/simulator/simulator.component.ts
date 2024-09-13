@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./simulator.component.scss']
 })
 export class SimulatorComponent implements OnInit {
+  mostrar = false;
+
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  click(evento: any){
+    console.log(evento);
+  }
 }
