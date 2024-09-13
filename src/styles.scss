@@ -1,23 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection/assets/fonts/fonts.scss";
-@import "~@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection/assets/fonts/icons.scss";
+@import "@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection/assets/fonts/fonts.scss";
+@import "@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection/assets/fonts/icons.scss";
 
-$icons-path: "~@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection";
-$font-family-path: "~@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection";
-
-
-* {
-  box-sizing: border-box;
-  font-family: Kiffo-Regular, Roboto-Regular, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-.carousel-arrow{
-  background-color: #ffbf57 !important;
-}
-.carousel-arrow-disabled{
-  display: none !important;
-}
-.carousel{
-  z-index: 0 !important;
-}
+$font-family-path: "@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection";
+$icons-path: "@npm-bbta/bbog-dig-dt-sherpa-lib/dist/collection";
